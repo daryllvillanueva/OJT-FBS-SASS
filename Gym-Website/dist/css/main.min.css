@@ -1,0 +1,582 @@
+:root {
+  --light: #f7f7f7;
+  --dark: #191919;
+  --orange: #ff7906;
+  --grey: #f5f5f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img, video, picture, svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+@font-face {
+  font-family: "clashdisplay-regular";
+  src: url("../../fonts/ClashDisplay-Regular.otf");
+}
+@font-face {
+  font-family: "clashdisplay-medium";
+  src: url("../../fonts/ClashDisplay-Medium.otf");
+}
+@font-face {
+  font-family: "clashdisplay-bold";
+  src: url("../../fonts/ClashDisplay-Bold.otf");
+}
+@font-face {
+  font-family: "fspimlico-bold";
+  src: url("../../fonts/FSPimlico-Bold.ttf");
+}
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "clashdisplay-regular", arial, sans-serif;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  background-color: var(--dark);
+}
+
+body.open {
+  overflow: hidden;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "clashdisplay-medium", arial, sans-serif;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+}
+
+h2 {
+  font-size: clamp(2.2rem, 6vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(2rem, 6vw, 2.5rem);
+}
+
+h4 {
+  font-size: clamp(1.4rem, 6vw, 1.6rem);
+}
+
+p {
+  font-size: clamp(1.4rem, 6vw, 1.6rem);
+}
+
+.container {
+  max-width: 98%;
+  padding: 0 1.6rem;
+  margin: 0 auto;
+}
+
+.main-container {
+  max-width: 97%;
+  padding: 0 1.6rem;
+  margin: 0 auto;
+}
+
+.bg-light {
+  background-color: var(--light);
+}
+
+.text-light {
+  color: var(--light);
+}
+
+.bg-dark {
+  background-color: var(--dark);
+}
+
+.text-dark {
+  color: var(--dark);
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mx-1 {
+  margin: 0 1rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mx-2 {
+  margin: 0 2rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.mx-3 {
+  margin: 0 3rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.gap-3 {
+  gap: 3rem;
+}
+
+.mb-4 {
+  margin-bottom: 4rem;
+}
+
+.mx-4 {
+  margin: 0 4rem;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.gap-4 {
+  gap: 4rem;
+}
+
+.mb-5 {
+  margin-bottom: 5rem;
+}
+
+.mx-5 {
+  margin: 0 5rem;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+
+.py-5 {
+  padding: 5rem 0;
+}
+
+.gap-5 {
+  gap: 5rem;
+}
+
+.mb-6 {
+  margin-bottom: 6rem;
+}
+
+.mx-6 {
+  margin: 0 6rem;
+}
+
+.p-6 {
+  padding: 6rem;
+}
+
+.py-6 {
+  padding: 6rem 0;
+}
+
+.gap-6 {
+  gap: 6rem;
+}
+
+.mb-7 {
+  margin-bottom: 7rem;
+}
+
+.mx-7 {
+  margin: 0 7rem;
+}
+
+.p-7 {
+  padding: 7rem;
+}
+
+.py-7 {
+  padding: 7rem 0;
+}
+
+.gap-7 {
+  gap: 7rem;
+}
+
+.mb-8 {
+  margin-bottom: 8rem;
+}
+
+.mx-8 {
+  margin: 0 8rem;
+}
+
+.p-8 {
+  padding: 8rem;
+}
+
+.py-8 {
+  padding: 8rem 0;
+}
+
+.gap-8 {
+  gap: 8rem;
+}
+
+.mb-9 {
+  margin-bottom: 9rem;
+}
+
+.mx-9 {
+  margin: 0 9rem;
+}
+
+.p-9 {
+  padding: 9rem;
+}
+
+.py-9 {
+  padding: 9rem 0;
+}
+
+.gap-9 {
+  gap: 9rem;
+}
+
+.mb-10 {
+  margin-bottom: 10rem;
+}
+
+.mx-10 {
+  margin: 0 10rem;
+}
+
+.p-10 {
+  padding: 10rem;
+}
+
+.py-10 {
+  padding: 10rem 0;
+}
+
+.gap-10 {
+  gap: 10rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-1-2 {
+  width: 50%;
+}
+
+.w-1-4 {
+  width: 25%;
+}
+
+.w-1-3 {
+  width: 33.3%;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.btn {
+  padding: 1.5rem 2.5rem;
+  margin: 2rem 0;
+  border-radius: 1rem;
+  font-family: "Speedee-Bold";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  transition: 0.5s ease;
+  text-transform: uppercase;
+}
+.btn-light {
+  background: var(--light);
+}
+.btn-light:hover {
+  background: var(--light);
+}
+.btn-dark {
+  background: var(--dark);
+}
+.btn-dark:hover {
+  background: var(--dark);
+}
+
+.header_wrapper a {
+  color: var(--dark);
+  font-size: clamp(1rem, 5vw, 1.9rem);
+  font-family: "clashdisplay-medium", arial, sans-serif;
+}
+.header_wrapper .a-1 {
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--orange);
+}
+.header_wrapper button {
+  border: none;
+  background-color: var(--orange);
+  padding: 1.3rem 3rem;
+  color: var(--light);
+  border-radius: 4rem;
+  font-size: clamp(1rem, 5vw, 1.9rem);
+}
+
+.tns-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+.tns-controls button {
+  background: transparent;
+  border: none;
+  font-size: 3rem;
+}
+
+.home {
+  margin-top: 1rem;
+  background-color: var(--dark);
+  padding-bottom: 3rem;
+}
+.home .main-container {
+  background-color: var(--grey);
+  border-radius: 5rem;
+}
+
+.banner {
+  padding-bottom: 3rem;
+}
+.banner_main_left h5 {
+  color: #737374;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  font-size: clamp(1.2rem, 7vw, 1.7rem);
+}
+.banner_main_left h1 {
+  font-size: clamp(3rem, 7vw, 8.5rem);
+  letter-spacing: 0.5rem;
+}
+.banner_main_left span {
+  display: block;
+}
+.banner_main_right .member {
+  border: none;
+  background-color: var(--orange);
+  color: var(--light);
+  padding: 2rem 3rem;
+  border-radius: 3rem;
+  font-size: clamp(1rem, 6vw, 2.3rem);
+}
+.banner_main_right .learn_more {
+  background: transparent;
+  border: 1px solid var(--orange);
+  border-radius: 3rem;
+  color: var(--dark);
+  padding: 1.7rem 2.5rem;
+  font-size: clamp(1rem, 6vw, 2.5rem);
+}
+.banner_main_right i {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+}
+.banner_submain {
+  display: grid;
+  grid-template-columns: 1fr 2.2fr;
+  grid-gap: 1rem;
+}
+.banner_submain img {
+  border-radius: 2.5rem;
+  margin-bottom: 2rem;
+}
+.banner_submain p {
+  font-size: clamp(1rem, 6vw, 1.6rem);
+  text-wrap: balance;
+  text-align: left;
+  margin-bottom: 5rem;
+}
+
+.update_wrapper {
+  border-radius: 8rem;
+  color: var(--light);
+  background-color: #222222;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.update_wrapper .update_list p:nth-child(even) {
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+}
+.update_wrapper .update_list p:nth-child(odd) {
+  opacity: 0.85;
+}
+
+.benefits {
+  color: var(--light);
+  text-wrap: balance;
+}
+.benefits_title h2 {
+  font-size: clamp(2rem, 7vw, 4rem);
+}
+.benefits_wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 1rem;
+}
+.benefits_wrapper .benefits_list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  background-color: #222222;
+  border-radius: 3rem;
+  grid-row-gap: 4.5rem;
+}
+.benefits_wrapper .benefits_card h3 {
+  font-size: clamp(1rem, 5vw, 3rem);
+  letter-spacing: 0.3rem;
+}
+.benefits_wrapper .benefits_card i {
+  font-size: 3rem;
+  color: var(--orange);
+  margin-top: 0.8rem;
+}
+.benefits_wrapper img {
+  border-radius: 0 3rem 3rem 0;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+}
+
+.trainers {
+  color: var(--light);
+}
+.trainers_title h2 {
+  font-size: clamp(2rem, 7vw, 4rem);
+  letter-spacing: 0.3rem;
+}
+.trainers_card img {
+  border-radius: 2rem 2rem 0 0;
+}
+.trainers_card h3 {
+  color: var(--dark);
+  background: var(--grey);
+  border-radius: 0 0 1.5rem 1.5rem;
+  letter-spacing: 0.2rem;
+}
+
+.testimonials {
+  color: var(--light);
+}
+.testimonials_wrapper {
+  background-color: #222222;
+  border-radius: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1rem;
+}/*# sourceMappingURL=main.min.css.map */

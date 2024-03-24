@@ -1,0 +1,164 @@
+@use '../abstract' as *;
+@use '../base' as *;
+@use '../component' as *;
+@use '../layout' as *;
+@use '../vendor' as *;
+
+
+.home {
+    margin-top: 1rem;
+    background-color: $clr-dark;
+    padding-bottom: 3rem;
+    .main-container {
+        background-color: $clr-secondary;
+        border-radius: 5rem;
+    }
+}
+
+.banner {
+    padding-bottom: 3rem;
+    &_main {
+        &_left {
+            h5 {
+                color: #737374;
+                letter-spacing: 0.2rem;
+                font-weight: 400;
+                margin-bottom: 1rem;
+                font-size: clamp(1.2rem, 7vw, 1.7rem);
+            }
+            h1 {
+                font-size: clamp(3rem, 7vw, 8.5rem);
+                letter-spacing: 0.5rem;
+            }
+            span {
+                display: block;
+            }
+        }
+        &_right {
+            .member {
+                border: none;
+                background-color: $clr-primary;
+                color: $clr-light;
+                padding: 2rem 3rem;
+                border-radius: 3rem;
+                font-size: clamp(1rem, 6vw, 2.3rem);
+            }
+            .learn_more {
+                background: transparent;
+                border: 1px solid $clr-primary;
+                border-radius: 3rem;
+                color: $clr-dark;
+                padding: 1.7rem 2.5rem;
+                font-size: clamp(1rem, 6vw, 2.5rem);
+            }
+            i {
+                font-size: 2.5rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    &_submain {
+        @include unevenGrid(1fr 2.2fr);
+        img {
+            border-radius: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        p {
+            font-size: clamp(1rem, 6vw, 1.6rem);
+            text-wrap: balance;
+            text-align: left;
+            margin-bottom: 5rem;
+        }
+    }
+}
+
+.update {
+    &_wrapper {
+        border-radius: 8rem;
+        color: $clr-light;
+        background-color: #222222;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        .update_list {
+            p:nth-child(even) {
+                font-weight: 600;
+                letter-spacing: .3rem;
+            }
+            p:nth-child(odd) {
+                opacity: .85;
+            }
+        }
+    }
+}
+
+.benefits {
+    color: $clr-light;
+    text-wrap: balance;
+    &_title {
+        h2 {
+            font-size: clamp(2rem, 7vw, 4rem);
+        }
+    }
+    &_wrapper {
+        position: relative;
+        @include unevenGrid(3fr 1fr);
+        .benefits_list {
+            @include grid(2);
+            background-color: #222222;
+            border-radius: 3rem;
+            grid-row-gap: 4.5rem;
+        }
+        .benefits_card {
+            h3 {
+                font-size: clamp(1rem, 5vw, 3rem);
+                letter-spacing: .3rem;
+            }
+            i {
+                font-size: 3rem;
+                color: $clr-primary;
+                margin-top: 0.8rem;
+            }
+        }
+        img {
+            border-radius: 0 3rem 3rem 0;
+            position: absolute;
+            right: 1rem;
+            top: 0;
+        }
+    }
+}
+
+.trainers {
+    color: $clr-light;
+    &_title {
+        h2 {
+            font-size: clamp(2rem, 7vw, 4rem);
+            letter-spacing: .3rem;
+        }
+    }
+    &_card {
+        img {
+            border-radius: 2rem 2rem 0 0;
+        }
+        h3 {
+            color: $clr-dark;
+            background: $clr-secondary;
+            border-radius: 0 0 1.5rem 1.5rem;
+            letter-spacing: 0.2rem;
+        }
+    }
+}
+
+.testimonials {
+    color: $clr-light;
+    &_wrapper {
+        background-color: #222222;
+        border-radius: 3rem;
+        @include unevenGrid(1fr 2fr);
+       
+    }
+
+}

@@ -1,0 +1,16 @@
+:root {
+    --light : #f7f7f7;
+    --dark : #191919;
+    --orange: #ff7906;
+    --grey: #f5f5f5;
+}
+
+$clr-primary: var(--orange);
+$clr-secondary: var(--grey);
+$clr-light: var(--light);
+$clr-dark: var(--dark);
+
+$sm: "42rem";   // use variable if the element is repeatable
+$md: "92rem";
+$lg: "144rem";
+$xl: "180rem";

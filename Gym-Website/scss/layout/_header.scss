@@ -1,0 +1,23 @@
+@use '../abstract' as *;
+
+.header {
+    &_wrapper {
+        a {
+            color: $clr-dark;
+            font-size: clamp(1rem, 5vw, 1.9rem);
+            font-family: "clashdisplay-medium", arial, sans-serif;
+        }
+        .a-1 {
+            padding-bottom: .5rem;
+            border-bottom: 2px solid $clr-primary;
+        }
+        button {
+            border: none;
+            background-color: $clr-primary;
+            padding: 1.3rem 3rem;
+            color: $clr-light;
+            border-radius: 4rem;
+            font-size: clamp(1rem, 5vw, 1.9rem);
+        }
+    }
+}

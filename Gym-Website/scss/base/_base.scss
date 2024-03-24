@@ -1,0 +1,90 @@
+@use '../abstract' as *;
+
+
+@font-face {
+    font-family: "clashdisplay-regular";
+    src: url('../../fonts/ClashDisplay-Regular.otf');
+}
+
+@font-face {
+    font-family: "clashdisplay-medium";
+    src: url('../../fonts/ClashDisplay-Medium.otf');
+}
+
+@font-face {
+    font-family: "clashdisplay-bold";
+    src: url('../../fonts/ClashDisplay-Bold.otf');
+}
+
+@font-face {
+    font-family: "fspimlico-bold";
+    src: url('../../fonts/FSPimlico-Bold.ttf');
+}
+
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "clashdisplay-regular", arial, sans-serif;
+    line-height: 1.6;
+    font-size: 1.6rem;
+    background-color: $clr-dark;
+}
+
+body.open {
+     overflow: hidden;
+     height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "clashdisplay-medium", arial, sans-serif;
+    text-wrap: balance;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 6vw , 4rem);
+    // margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: clamp(2.2rem, 6vw , 3rem);
+    // margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: clamp(2rem, 6vw , 2.5rem);
+    // margin-bottom: 1.6rem;
+}
+
+h4 {
+    font-size: clamp(1.4rem, 6vw , 1.6rem);
+    // margin-bottom: 1.6rem;
+}
+
+p {
+    font-size: clamp(1.4rem, 6vw , 1.6rem);
+    // margin-bottom: 1.3rem;
+    // text-wrap: balance;
+}
+
+.container {
+    max-width: 98%;
+    padding: 0 1.6rem;
+    margin: 0 auto;
+}
+
+.main-container {
+    max-width: 97%;
+    padding: 0 1.6rem;
+    margin: 0 auto;
+}
